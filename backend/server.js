@@ -26,7 +26,17 @@ app.get('/', (req, res) => {
 });
 
 // Connect to MongoDB
-mongoose.connect(process.env.MONGO_URI)
+const mongoURI = process.env.MONGO_URI;
+
+if (!mongoURI) {
+  console.error('❌ MONGO_URI is not defined in environment variables');
+} else {
+  console.log(`📡 Attempting to connect to MongoDB... (URI length: ${mongoURI.length})`);
+}
+
+mongoose.connect(mongoURI, {
+  serverSelectionTimeoutMS: 5000, // Timeout after 5s instead of 30s
+})
   .then(() => {
     console.log('✅ MongoDB connected');
     app.listen(process.env.PORT || 5000, () => {
@@ -35,8 +45,8 @@ mongoose.connect(process.env.MONGO_URI)
   })
   .catch((err) => {
     console.error('❌ MongoDB connection error:', err.message);
-    console.log('⚠️  Starting server without MongoDB...');
+    console.log('⚠️  Starting server without MongoDB functionality...');
     app.listen(process.env.PORT || 5000, () => {
-      console.log(`🚀 Server running on port ${process.env.PORT || 5000} (no DB)`);
+      console.log(`🚀 Server running on port ${process.env.PORT || 5000} (Limited Mode)`);
     });
   });
