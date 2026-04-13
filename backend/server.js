@@ -21,9 +21,35 @@ app.use('/api/trips', tripRoutes);
 app.use('/api/bookings', bookingRoutes);
 app.use('/api/contact', contactRoutes);
 
+// Utility to check DB connection
+const checkDbConnection = (req, res, next) => {
+  if (mongoose.connection.readyState !== 1) {
+    return res.status(503).json({
+      message: 'Database not connected',
+      error: 'The server is currently unable to reach the database. Please ensure MONGO_URI is correctly configured in your environment variables.',
+      status: mongoose.connection.readyState
+    });
+  }
+  next();
+};
+
 app.get('/', (req, res) => {
-  res.json({ message: 'Travel Planner API running!' });
+  const dbStatus = {
+    0: 'disconnected',
+    1: 'connected',
+    2: 'connecting',
+    3: 'disconnecting',
+    99: 'uninitialized',
+  };
+  res.json({
+    message: 'Travel Planner API running!',
+    database: dbStatus[mongoose.connection.readyState] || 'unknown',
+    uri_configured: !!process.env.MONGO_URI
+  });
 });
+
+// Middleware for routes that require database
+app.use('/api', checkDbConnection);
 
 // Connect to MongoDB
 const mongoURI = process.env.MONGO_URI;
