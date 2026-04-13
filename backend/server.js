@@ -61,7 +61,7 @@ if (!mongoURI) {
 }
 
 mongoose.connect(mongoURI, {
-  serverSelectionTimeoutMS: 5000, // Timeout after 5s instead of 30s
+  serverSelectionTimeoutMS: 30000, 
 })
   .then(() => {
     console.log('✅ MongoDB connected');
