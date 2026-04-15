@@ -93,7 +93,7 @@ export default function Login({ onLogin }) {
                 <div className="w-5 h-5 rounded-full border-2 border-white/30 border-t-white animate-spin"></div>
                 Logging in...
               </span>
-            ) : "Log In Targetting Adventure"}
+            ) : "Log In Targeting Adventure"}
           </button>
         </form>
 

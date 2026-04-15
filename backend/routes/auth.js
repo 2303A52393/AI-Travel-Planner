@@ -48,21 +48,27 @@ router.post('/register', async (req, res) => {
 router.post('/login', async (req, res) => {
   try {
     const { identifier, password } = req.body;
+    console.log(`📡 Login attempt for: ${identifier}`);
 
-    // Allow login by email or username
+    // Lowercase identifier if it looks like an email to ensure match with DB
+    const processedIdentifier = identifier.includes('@') ? identifier.toLowerCase() : identifier;
+
     const user = await User.findOne({
-      $or: [{ email: identifier }, { username: identifier }]
+      $or: [{ email: processedIdentifier }, { username: identifier }]
     });
 
     if (!user) {
-      return res.status(400).json({ message: 'Invalid credentials' });
+      console.log(`❌ User not found: ${processedIdentifier}`);
+      return res.status(400).json({ message: 'Account not found with this email/username' });
     }
 
     const isMatch = await bcrypt.compare(password, user.password);
     if (!isMatch) {
-      return res.status(400).json({ message: 'Invalid credentials' });
+      console.log(`❌ Password mismatch for: ${user.email}`);
+      return res.status(400).json({ message: 'Incorrect password. Please try again.' });
     }
 
+    console.log(`✅ Login successful: ${user.email}`);
     const token = jwt.sign({ id: user._id, username: user.username }, process.env.JWT_SECRET, { expiresIn: '7d' });
 
     res.json({
@@ -71,7 +77,7 @@ router.post('/login', async (req, res) => {
       user: { id: user._id, username: user.username, email: user.email }
     });
   } catch (err) {
-    console.error(err);
+    console.error(`💥 Login Error: ${err.message}`);
     res.status(500).json({ message: 'Server error', error: err.message });
   }
 });
