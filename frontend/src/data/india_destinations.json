@@ -1,284 +1,79 @@
 {
   "india_destinations": [
-    {
-      "name": "Varanasi",
-      "state": "Uttar Pradesh",
-      "type": "temple",
-      "famous_for": "Ganga Aarti, Kashi Vishwanath Temple, Oldest Living City",
-      "description": "The spiritual heart of India, famous for its ancient ghats and vibrant rituals on the banks of the Holy Ganges."
-    },
-    {
-      "name": "Jaipur",
-      "state": "Rajasthan",
-      "type": "heritage",
-      "famous_for": "Hawa Mahal, Amer Fort, City Palace",
-      "description": "The 'Pink City' of India, known for its royal history, magnificent forts, and unique architectural heritage."
-    },
-    {
-      "name": "Goa",
-      "state": "Goa",
-      "type": "beach",
-      "famous_for": "Calangute Beach, Basilica of Bom Jesus, Nightlife",
-      "description": "A world-renowned coastal destination offering beautiful beaches, Portuguese culture, and lively entertainment."
-    },
-    {
-      "name": "Munnar",
-      "state": "Kerala",
-      "type": "hill station",
-      "famous_for": "Tea Gardens, Eravikulam National Park, Anamudi Peak",
-      "description": "A tranquil hill station in the Western Ghats famous for its vast tea plantations and mist-laden hills."
-    },
-    {
-      "name": "Bangalore",
-      "state": "Karnataka",
-      "type": "city",
-      "famous_for": "Lalbagh Botanical Garden, Cubbon Park, ISKCON Temple",
-      "description": "The Garden City and Silicon Valley of India, known for its pleasant climate and rapid urban growth."
-    },
-    {
-      "name": "Agra",
-      "state": "Uttar Pradesh",
-      "type": "heritage",
-      "famous_for": "Taj Mahal, Agra Fort, Fatehpur Sikri",
-      "description": "Home to the world-famous Taj Mahal, Agra is a must-visit for its rich Mughal history and monuments."
-    },
-    {
-      "name": "Rishikesh",
-      "state": "Uttarakhand",
-      "type": "temple",
-      "famous_for": "Ram Jhula, Triveni Ghat, Yoga Capital",
-      "description": "A major spiritual hub and the Yoga capital of the world, situated at the foothills of the Himalayas."
-    },
-    {
-      "name": "Mumbai",
-      "state": "Maharashtra",
-      "type": "city",
-      "famous_for": "Gateway of India, Marine Drive, Bollywood",
-      "description": "The financial capital of India, a bustling metropolis known for its coastal beauty and film industry."
-    },
-    {
-      "name": "Leh",
-      "state": "Ladakh",
-      "type": "hill station",
-      "famous_for": "Pangong Lake, Khardung La Pass, Monasteries",
-      "description": "A high-altitude desert city offering breathtaking landscapes, stark mountains, and serene Buddhist monasteries."
-    },
-    {
-      "name": "Amritsar",
-      "state": "Punjab",
-      "type": "temple",
-      "famous_for": "Golden Temple, Jallianwala Bagh, Wagah Border",
-      "description": "The spiritual and cultural center of the Sikh religion, home to the stunning Harmandir Sahib."
-    },
-    {
-      "name": "Hampi",
-      "state": "Karnataka",
-      "type": "heritage",
-      "famous_for": "Virupaksha Temple, Stone Chariot, Vijayanagara Ruins",
-      "description": "A UNESCO World Heritage site featuring the majestic ruins of the ancient Vijayanagara Empire."
-    },
-    {
-      "name": "Kolkata",
-      "state": "West Bengal",
-      "type": "city",
-      "famous_for": "Victoria Memorial, Howrah Bridge, Dakshineswar Kali Temple",
-      "description": "The cultural capital of India, known for its colonial architecture, art, and vibrant festivals."
-    },
-    {
-      "name": "Udaipur",
-      "state": "Rajasthan",
-      "type": "heritage",
-      "famous_for": "Lake Pichola, City Palace, Jagmandir",
-      "description": "Known as the City of Lakes, Udaipur is one of India's most romantic cities with stunning palaces."
-    },
-    {
-      "name": "Alleppey",
-      "state": "Kerala",
-      "type": "beach",
-      "famous_for": "Backwaters, Houseboats, Marari Beach",
-      "description": "The Venice of the East, famous for its serene backwater cruises and picturesque palm-fringed canals."
-    },
-    {
-      "name": "Darjeeling",
-      "state": "West Bengal",
-      "type": "hill station",
-      "famous_for": "Tea Gardens, Tiger Hill, Toy Train",
-      "description": "A charming hill station offering spectacular views of Mount Kanchenjunga and world-famous tea."
-    },
-    {
-      "name": "Hyderabad",
-      "state": "Telangana",
-      "type": "city",
-      "famous_for": "Charminar, Golconda Fort, Salar Jung Museum",
-      "description": "A historic city blending Nizam heritage with modern technology, famous for its pearls and biryani."
-    },
-    {
-      "name": "Puri",
-      "state": "Odisha",
-      "type": "temple",
-      "famous_for": "Jagannath Temple, Puri Beach, Konark Sun Temple",
-      "description": "A major pilgrimage site on the east coast, known for the annual Rath Yatra and golden beaches."
-    },
-    {
-      "name": "Indore",
-      "state": "Madhya Pradesh",
-      "type": "city",
-      "famous_for": "Rajwada, Sarafa Bazar, Cleanest City in India",
-      "description": "A commercial hub of Central India celebrated for its rich food culture and historic landmarks."
-    },
-    {
-      "name": "Shimla",
-      "state": "Himachal Pradesh",
-      "type": "hill station",
-      "famous_for": "The Ridge, Mall Road, Jakhoo Temple",
-      "description": "The former summer capital of British India, offering colonial charm and stunning Himalayan views."
-    },
-    {
-      "name": "Madurai",
-      "state": "Tamil Nadu",
-      "type": "temple",
-      "famous_for": "Meenakshi Amman Temple, Thirumalai Nayakkar Mahal",
-      "description": "One of the oldest cities in India, centered around the spectacular Dravidian-style Meenakshi Temple."
-    },
-    {
-      "name": "Khajuraho",
-      "state": "Madhya Pradesh",
-      "type": "heritage",
-      "famous_for": "Kandariya Mahadeva Temple, Erotic Sculptures",
-      "description": "Famous for its UNESCO-listed group of temples featuring intricate and expressive stone carvings."
-    },
-    {
-      "name": "Pondicherry",
-      "state": "Puducherry",
-      "type": "beach",
-      "famous_for": "Promenade Beach, Auroville, French Quarter",
-      "description": "A unique coastal town blending French colonial heritage with spiritual tranquility."
-    },
-    {
-      "name": "Guwahati",
-      "state": "Assam",
-      "type": "city",
-      "famous_for": "Kamakhya Temple, Brahmaputra River, Kaziranga (Nearby)",
-      "description": "The gateway to Northeast India, located on the banks of the mighty Brahmaputra river."
-    },
-    {
-      "name": "Tirupati",
-      "state": "Andhra Pradesh",
-      "type": "temple",
-      "famous_for": "Tirumala Venkateswara Temple, Silathoranam",
-      "description": "Home to the world's most visited sacred shrine, located atop the scenic Seshachalam Hills."
-    },
-    {
-      "name": "Jodhpur",
-      "state": "Rajasthan",
-      "type": "heritage",
-      "famous_for": "Mehrangarh Fort, Umaid Bhawan Palace, Blue City",
-      "description": "The 'Blue City' known for its towering fort and vibrant blue houses in the old town area."
-    },
-    {
-      "name": "Gangtok",
-      "state": "Sikkim",
-      "type": "hill station",
-      "famous_for": "Rumtek Monastery, Nathu La Pass, MG Marg",
-      "description": "A mountain city offering panoramic views of the Himalayas and a center for Tibetan Buddhism."
-    },
-    {
-      "name": "Ahmedabad",
-      "state": "Gujarat",
-      "type": "heritage",
-      "famous_for": "Sabarmati Ashram, Adalaj Stepwell, Akshardham Temple",
-      "description": "India's first UNESCO World Heritage City, known for its cotton industries and textile heritage."
-    },
-    {
-      "name": "Manali",
-      "state": "Himachal Pradesh",
-      "type": "hill station",
-      "famous_for": "Solang Valley, Hadimba Devi Temple, Rohtang Pass",
-      "description": "A high-altitude resort town popular for honeymooners and adventure sports in the Himalayas."
-    },
-    {
-      "name": "Mysore",
-      "state": "Karnataka",
-      "type": "heritage",
-      "famous_for": "Mysore Palace, Chamundi Hill, Brindavan Gardens",
-      "description": "The cultural capital of Karnataka, famous for its royal heritage and the grand Dasara festival."
-    },
-    {
-      "name": "Shillong",
-      "state": "Meghalaya",
-      "type": "hill station",
-      "famous_for": "Elephant Falls, Umiam Lake, Scotland of the East",
-      "description": "A hill station known for its pine trees, waterfalls, and cool mountain weather."
-    },
-    {
-      "name": "Pune",
-      "state": "Maharashtra",
-      "type": "city",
-      "famous_for": "Shaniwar Wada, Aga Khan Palace, Osho Ashram",
-      "description": "The cultural capital of Maharashtra, known for its educational institutions and historic sites."
-    },
-    {
-      "name": "Kanyakumari",
-      "state": "Tamil Nadu",
-      "type": "beach",
-      "famous_for": "Vivekananda Rock Memorial, Thiruvalluvar Statue, Sunrise",
-      "description": "The southernmost tip of India, where the Arabian Sea, Bay of Bengal, and Indian Ocean meet."
-    },
-    {
-      "name": "Bhopal",
-      "state": "Madhya Pradesh",
-      "type": "city",
-      "famous_for": "Upper Lake, Van Vihar, Taj-ul-Masajid",
-      "description": "The City of Lakes, known for its natural beauty, historic mosques, and Nawabi culture."
-    },
-    {
-      "name": "Haridwar",
-      "state": "Uttarakhand",
-      "type": "temple",
-      "famous_for": "Har Ki Pauri, Kumbh Mela, Mansa Devi Temple",
-      "description": "One of the holiest cities in India, where the Ganges enters the plains of North India."
-    },
-    {
-      "name": "Gwalior",
-      "state": "Madhya Pradesh",
-      "type": "heritage",
-      "famous_for": "Gwalior Fort, Jai Vilas Palace, Tansen Tomb",
-      "description": "Renowned for its hilltop fort and musical heritage, once a major center of princely India."
-    },
-    {
-      "name": "Bhubaneswar",
-      "state": "Odisha",
-      "type": "temple",
-      "famous_for": "Lingaraj Temple, Udayagiri & Khandagiri Caves",
-      "description": "The Temple City of India, featuring ancient sandstone architecture from the 7th-12th centuries."
-    },
-    {
-      "name": "Surat",
-      "state": "Gujarat",
-      "type": "city",
-      "famous_for": "Diamond Cutting, Textile Market, Dumas Beach",
-      "description": "A major economic hub known for its diamond and textile industries on the banks of Tapi river."
-    },
-    {
-      "name": "Orchha",
-      "state": "Madhya Pradesh",
-      "type": "heritage",
-      "famous_for": "Ram Raja Temple, Jahangir Mahal, Chaturbhuj Temple",
-      "description": "A hidden gem featuring grand palaces and temples reflecting the glory of the Bundela kings."
-    },
-    {
-      "name": "Srinagar",
-      "state": "Jammu & Kashmir",
-      "type": "hill station",
-      "famous_for": "Dal Lake, Mughal Gardens, Pashmina Shawls",
-      "description": "The summer capital of J&K, famous for its houseboat stays and beautiful water-side gardens."
-    },
-    {
-      "name": "Jodhpur",
-      "state": "Rajasthan",
-      "type": "heritage",
-      "famous_for": "Mehrangarh Fort, Umaid Bhawan Palace, Blue City",
-      "description": "The 'Blue City' of Rajasthan, dominated by the massive Mehrangarh Fort overlooking the old city."
-    }
+    { "name": "Agra", "state": "Uttar Pradesh", "type": "heritage", "famous_for": "Taj Mahal, Agra Fort", "description": "Home to the iconic Taj Mahal, a symbol of eternal love and Mughal splendor." },
+    { "name": "Agartala", "state": "Tripura", "type": "city", "famous_for": "Ujjayanta Palace, Neermahal", "description": "Capital of Tripura, blending Bengali culture with royal heritage." },
+    { "name": "Ahmedabad", "state": "Gujarat", "type": "heritage", "famous_for": "Sabarmati Ashram, Adalaj Stepwell", "description": "India's first UNESCO World Heritage City, rich in textile history." },
+    { "name": "Aizawl", "state": "Mizoram", "type": "hill station", "famous_for": "Durtlang Hills, Mizoram State Museum", "description": "A scenic hill city offering panoramic views of the Blue Mountains." },
+    { "name": "Ajanta-Ellora", "state": "Maharashtra", "type": "heritage", "famous_for": "Rock-cut Caves, Kailasa Temple", "description": "Ancient UNESCO caves showcasing incredible Buddhist and Hindu rock-cut art." },
+    { "name": "Alleppey", "state": "Kerala", "type": "beach", "famous_for": "Backwaters, Houseboats", "description": "The 'Venice of the East', famous for its tranquil backwater cruises." },
+    { "name": "Amritsar", "state": "Punjab", "type": "temple", "famous_for": "Golden Temple, Wagah Border", "description": "Spiritual center of Sikhism and home to the stunning Harmandir Sahib." },
+    { "name": "Bangalore", "state": "Karnataka", "type": "city", "famous_for": "Lalbagh, Cubbon Park, Pubs", "description": "The Silicon Valley of India, known for its gardens and vibrant nightlife." },
+    { "name": "Bhopal", "state": "Madhya Pradesh", "type": "city", "famous_for": "Upper Lake, Sanchi Stupa (nearby)", "description": "The City of Lakes, blending natural beauty with Nawabi culture." },
+    { "name": "Bhubaneswar", "state": "Odisha", "type": "temple", "famous_for": "Lingaraj Temple, Khandagiri Caves", "description": "The Temple City of India, rich in architectural heritage." },
+    { "name": "Bodh Gaya", "state": "Bihar", "type": "spiritual", "famous_for": "Mahabodhi Temple, Bodhi Tree", "description": "Where Prince Siddhartha attained enlightenment and became Buddha." },
+    { "name": "Coorg", "state": "Karnataka", "type": "hill station", "famous_for": "Coffee Plantations, Abbey Falls", "description": "The 'Scotland of India', famous for its misty hills and coffee estates." },
+    { "name": "Dalhousie", "state": "Himachal Pradesh", "type": "hill station", "famous_for": "Khajjiar, Colonial Architecture", "description": "A charming hill station with distinct colonial vibes and pine forests." },
+    { "name": "Darjeeling", "state": "West Bengal", "type": "hill station", "famous_for": "Tea Gardens, Toy Train", "description": "Queen of the Hills, offering spectacular Himalayan views." },
+    { "name": "Delhi", "state": "Delhi", "type": "city", "famous_for": "Red Fort, Qutub Minar, Street Food", "description": "India's capital, a massive city where history and modernity collide." },
+    { "name": "Dharamshala", "state": "Himachal Pradesh", "type": "hill station", "famous_for": "McLeod Ganj, Dalai Lama Temple", "description": "The spiritual home of the Tibetan people in exile." },
+    { "name": "Dwarka", "state": "Gujarat", "type": "temple", "famous_for": "Dwarkadhish Temple, Beyt Dwarka", "description": "Ancient sacred city on the Arabian Sea, linked to Lord Krishna." },
+    { "name": "Gangtok", "state": "Sikkim", "type": "hill station", "famous_for": "Rumtek Monastery, Nathu La Pass", "description": "A clean, modern hill city and portal to high Himalayan adventures." },
+    { "name": "Goa", "state": "Goa", "type": "beach", "famous_for": "Calangute, Basilica of Bom Jesus", "description": "India's beach paradise, famous for its coastline and vibrant nightlife." },
+    { "name": "Gokarna", "state": "Karnataka", "type": "beach", "famous_for": "Om Beach, Mahabaleshwar Temple", "description": "A serene alternative to Goa, known for its pristine beaches." },
+    { "name": "Gulmarg", "state": "Jammu & Kashmir", "type": "hill station", "famous_for": "Gondola, Skiing", "description": "The 'Meadow of Flowers', a world-class skiing destination." },
+    { "name": "Guwahati", "state": "Assam", "type": "city", "famous_for": "Kamakhya Temple, Brahmaputra River", "description": "The gateway to Northeast India, located on the mighty Brahmaputra." },
+    { "name": "Gwalior", "state": "Madhya Pradesh", "type": "heritage", "famous_for": "Gwalior Fort, Jai Vilas Palace", "description": "Famed for its imposing fort and rich musical history." },
+    { "name": "Hampi", "state": "Karnataka", "type": "heritage", "famous_for": "Stone Chariot, Virupaksha Temple", "description": "Ancient ruins of the Vijayanagara Empire across a boulder-strewn landscape." },
+    { "name": "Haridwar", "state": "Uttarakhand", "type": "temple", "famous_for": "Har Ki Pauri, Ganga Aarti", "description": "Holy city where the Ganges enters the plains, a major pilgrimage hub." },
+    { "name": "Hyderabad", "state": "Telangana", "type": "city", "famous_for": "Charminar, Biryani, Golconda", "description": "A historic hub of Nizams, famous for its gems and delicious cuisine." },
+    { "name": "Imphal", "state": "Manipur", "type": "city", "famous_for": "Kangla Fort, Loktak Lake", "description": "Culturally rich gateway to the unique floating islands of Manipur." },
+    { "name": "Indore", "state": "Madhya Pradesh", "type": "city", "famous_for": "Sarafa Bazaar, Rajwada", "description": "Cleanest city with a legendary street food scene." },
+    { "name": "Jaipur", "state": "Rajasthan", "type": "heritage", "famous_for": "Hawa Mahal, Amer Fort", "description": "The 'Pink City', famous for its royal forts and grand palaces." },
+    { "name": "Jaisalmer", "state": "Rajasthan", "type": "heritage", "famous_for": "Golden Fort, Sand Dunes", "description": "The 'Golden City', rising from the heart of the Thar Desert." },
+    { "name": "Jodhpur", "state": "Rajasthan", "type": "heritage", "famous_for": "Mehrangarh Fort, Blue City", "description": "The 'Blue City', known for its massive fort and blue-painted houses." },
+    { "name": "Kanyakumari", "state": "Tamil Nadu", "type": "beach", "famous_for": "Vivekananda Rock, Sunrise", "description": "The southernmost tip of India, where three oceans meet." },
+    { "name": "Kaziranga", "state": "Assam", "type": "wildlife", "famous_for": "One-horned Rhino, Elephant Safari", "description": "UNESCO site home to the world's largest population of one-horned rhinos." },
+    { "name": "Khajuraho", "state": "Madhya Pradesh", "type": "heritage", "famous_for": "Erotic Sculptures, Ancient Temples", "description": "Famous for its stunning group of temples with expressive stone carvings." },
+    { "name": "Kochi", "state": "Kerala", "type": "city", "famous_for": "Chinese Fishing Nets, Fort Kochi", "description": "A historic port city where Europe meets the Malabar Coast." },
+    { "name": "Kodaikanal", "state": "Tamil Nadu", "type": "hill station", "famous_for": "Kodai Lake, Pillar Rocks", "description": "The 'Princess of Hill Stations', known for its cool mountain mist." },
+    { "name": "Kohima", "state": "Nagaland", "type": "hill station", "famous_for": "Hornbill Festival, War Cemetery", "description": "A high-altitude capital with a fierce history and tribal culture." },
+    { "name": "Kolkata", "state": "West Bengal", "type": "city", "famous_for": "Victoria Memorial, Howrah Bridge", "description": "The cultural capital of India, rich in colonial history and art." },
+    { "name": "Leh", "state": "Ladakh", "type": "hill station", "famous_for": "Pangong Lake, Monasteries", "description": "High-altitude desert city with dramatic landscapes and monasteries." },
+    { "name": "Lonavala", "state": "Maharashtra", "type": "hill station", "famous_for": "Tigers Point, Bhushi Dam", "description": "Popular monsoon getaway for city dwellers from Mumbai and Pune." },
+    { "name": "Madurai", "state": "Tamil Nadu", "type": "temple", "famous_for": "Meenakshi Temple, Thousand Pillars", "description": "One of India's oldest cities, centered around the spectacular Meenakshi shrine." },
+    { "name": "Mahabalipuram", "state": "Tamil Nadu", "type": "heritage", "famous_for": "Shore Temple, Five Rathas", "description": "Coastal town famed for its ancient rock-cut Pallava architecture." },
+    { "name": "Manali", "state": "Himachal Pradesh", "type": "hill station", "famous_for": "Rohtang Pass, Solang Valley", "description": "Popular resort town in the Himalayas, perfect for adventure and snow." },
+    { "name": "Mount Abu", "state": "Rajasthan", "type": "hill station", "famous_for": "Dilwara Temples, Nakki Lake", "description": "Rajasthan's only hill station, famous for its intricate marble temples." },
+    { "name": "Mumbai", "state": "Maharashtra", "type": "city", "famous_for": "Gateway of India, Marine Drive", "description": "The financial hub and home of Bollywood, a city that never sleeps." },
+    { "name": "Munnar", "state": "Kerala", "type": "hill station", "famous_for": "Tea Estates, Eravikulam", "description": "Lush green hills covered in endless tea plantations." },
+    { "name": "Mussoorie", "state": "Uttarakhand", "type": "hill station", "famous_for": "Mall Road, Kempty Falls", "description": "The 'Queen of Hills', a classic Victorian-era mountain retreat." },
+    { "name": "Mysore", "state": "Karnataka", "type": "heritage", "famous_for": "Mysore Palace, Chamundi Hill", "description": "The royal city of Karnataka, famous for its magnificent palaces." },
+    { "name": "Nainital", "state": "Uttarakhand", "type": "hill station", "famous_for": "Naini Lake, Mall Road", "description": "A beautiful lake town nestled in the Kumaon Himalayas." },
+    { "name": "Nashik", "state": "Maharashtra", "type": "city", "famous_for": "Wine Vineyards, Kumbh Mela", "description": "India's wine capital and a major spiritual center on the Godavari." },
+    { "name": "Ooty", "state": "Tamil Nadu", "type": "hill station", "famous_for": "Botanical Garden, Toy Train", "description": "Blue mountains, rolling hills, and colonial charm in the Nilgiris." },
+    { "name": "Orchha", "state": "Madhya Pradesh", "type": "heritage", "famous_for": "Ram Raja Temple, Jahangir Mahal", "description": "A hidden gem of Bundela architecture on the Betwa river." },
+    { "name": "Pondicherry", "state": "Puducherry", "type": "beach", "famous_for": "French Quarter, Auroville", "description": "A coastal slice of France in India, known for its yellow buildings and ashrams." },
+    { "name": "Pune", "state": "Maharashtra", "type": "city", "famous_for": "Shaniwar Wada, Aga Khan Palace", "description": "Cultural capital of Maharashtra, known for its history and youth culture." },
+    { "name": "Puri", "state": "Odisha", "type": "temple", "famous_for": "Jagannath Temple, Puri Beach", "description": "Holy seaside city and home to one of the world's grandest festivals." },
+    { "name": "Pushkar", "state": "Rajasthan", "type": "temple", "famous_for": "Brahma Temple, Camel Fair", "description": "Sacred lake town and the only world site dedicated to Lord Brahma." },
+    { "name": "Rameswaram", "state": "Tamil Nadu", "type": "temple", "famous_for": "Ramanathaswamy Temple, Dhanushkodi", "description": "Sacred island city at the tip of India, crucial to the Ramayana trail." },
+    { "name": "Rann of Kutch", "state": "Gujarat", "type": "heritage", "famous_for": "White Desert, Rann Utsav", "description": "A surreal white salt desert that comes alive during the Rann Utsav." },
+    { "name": "Rishikesh", "state": "Uttarakhand", "type": "spiritual", "famous_for": "Laxman Jhula, River Rafting", "description": "The Yoga capital of the world, where the holy Ganges flows." },
+    { "name": "Shillong", "state": "Meghalaya", "type": "hill station", "famous_for": "Elephant Falls, Umiam Lake", "description": "The 'Scotland of the East', known for its waterfalls and pine trees." },
+    { "name": "Shimla", "state": "Himachal Pradesh", "type": "hill station", "famous_for": "The Ridge, Mall Road", "description": "The colonial-era summer capital of British India." },
+    { "name": "Somnath", "state": "Gujarat", "type": "temple", "famous_for": "Somnath Temple, Sea View", "description": "The site of the first Jyotirlinga, a magnificent temple on the ocean shore." },
+    { "name": "Srinagar", "state": "Jammu & Kashmir", "type": "hill station", "famous_for": "Dal Lake, Mughal Gardens", "description": "Paradise on Earth, famous for its houseboats and gardens." },
+    { "name": "Surat", "state": "Gujarat", "type": "city", "famous_for": "Diamond Industry, Textile Market", "description": "The Diamond City of India, the fastest-growing modern economic hub." },
+    { "name": "Tawang", "state": "Arunachal Pradesh", "type": "hill station", "famous_for": "Tawang Monastery, Sela Pass", "description": "Home to India's largest monastery and breathtaking mountain lakes." },
+    { "name": "Tirupati", "state": "Andhra Pradesh", "type": "temple", "famous_for": "Venkateswara Temple, Seven Hills", "description": "World's most visited sacred shrine, located atop the Seshachalam Hills." },
+    { "name": "Udaipur", "state": "Rajasthan", "type": "heritage", "famous_for": "City Palace, Lake Pichola", "description": "The 'City of Lakes', known for its romantic palaces and sunsets." },
+    { "name": "Udupi", "state": "Karnataka", "type": "temple", "famous_for": "Krishna Mutt, Malpe Beach", "description": "Famous temple town and the birthplace of world-renowned Udupi cuisine." },
+    { "name": "Varanasi", "state": "Uttar Pradesh", "type": "spiritual", "famous_for": "Kashi Vishwanath, Ganga Aarti", "description": "World's oldest living city, the spiritual heart of India on the Ganges." },
+    { "name": "Vijayawada", "state": "Andhra Pradesh", "type": "city", "famous_for": "Kanaka Durga Temple, Undavalli Caves", "description": "A bustling city on the Krishna River with ancient rock-cut treasures." },
+    { "name": "Vizag", "state": "Andhra Pradesh", "type": "beach", "famous_for": "RK Beach, Araku Valley (nearby)", "description": "The City of Destiny, a coastal port with stunning beaches and hills." },
+    { "name": "Wayanad", "state": "Kerala", "type": "hill station", "famous_for": "Edakkal Caves, Banasura Sagar", "description": "Green paradise in the Western Ghats with ancient caves and waterfalls." },
+    { "name": "Warangal", "state": "Telangana", "type": "heritage", "famous_for": "Thousand Pillar Temple, Warangal Fort", "description": "Ancient capital of the Kakatiya dynasty, rich in stone architecture." },
+    { "name": "Kanchipuram", "state": "Tamil Nadu", "type": "temple", "famous_for": "Kanchi Kamakshi Temple, Silk Sarees", "description": "The City of Thousand Temples and the world's finest silk weaving hub." },
+    { "name": "Arunachalam", "state": "Tamil Nadu", "type": "spiritual", "famous_for": "Annamalaiyar Temple, Girivalam", "description": "Sacred fire element city at the base of the mystic Arunachala hill." }
   ]
 }

@@ -1434,6 +1434,450 @@ const destinations = {
       { name: "Vellalar Mess", cuisine: "Local", location: "Main Road", rating: 4.6 }
     ],
     places_pool: [ { name: "Girivalam Path", location: "Hill", type: "Culture" } ]
+  },
+  "munnar": {
+    temples: [{ name: "Mount Carmel Church", location: "Munnar", history: { dynasty: "Colonial", year: 1898, builder: "Missionaries", importance: "First Catholic church in the high ranges" }, timings: "7:00 AM – 6:00 PM", entryFee: "Free", rating: 4.5 }],
+    famous_places: [
+      { name: "Eravikulam National Park", location: "Munnar", description: "Home to the endangered Nilgiri Tahr and the blooming Neelakurinji." },
+      { name: "Mattupetty Dam", location: "Munnar", description: "A beautiful storage masonry dam with speed boat facilities." },
+      { name: "Tea Museum", location: "Nallathanni Estate", description: "Focuses on the growth and evolution of tea plantations in Munnar." }
+    ],
+    hotels: [
+      { name: "The Munnar Queen", location: "Chithirapuram", pricePerNight: 4500, rating: 4.4 },
+      { name: "Tea County", location: "Munnar City", pricePerNight: 5500, rating: 4.3 }
+    ],
+    restaurants: [
+      { name: "Saravana Bhavan", cuisine: "South Indian", location: "Main Town", rating: 4.2 },
+      { name: "Rapsy Restaurant", cuisine: "Multi-cuisine", location: "Main Bazaar", rating: 4.4 }
+    ],
+    places_pool: [ { name: "Tea Gardens", location: "Munnar", type: "Landmark" }, { name: "Anamudi Peak", location: "Eravikulam", type: "Landmark" }, { name: "Echo Point", location: "Munnar", type: "Activity" } ]
+  },
+  "alleppey": {
+    famous_places: [
+      { name: "Alappuzha Beach", location: "Alleppey", description: "Famous for its 150-year-old pier extending into the sea." },
+      { name: "Marari Beach", location: "Mararikulam", description: "Quiet and pristine beach known for its serene environment." },
+      { name: "Backwaters", location: "Alleppey", description: "Iconic network of lagoons, lakes, and canals." }
+    ],
+    hotels: [
+      { name: "Ramada by Wyndham", location: "Alleppey", pricePerNight: 7500, rating: 4.5 },
+      { name: "Lemon Tree Vembanad", location: "Muhamma", pricePerNight: 6500, rating: 4.3 }
+    ],
+    restaurants: [
+      { name: "Thaff Restaurant", cuisine: "Kerala/Arab", location: "Alleppey", rating: 4.3 },
+      { name: "Dreamers Cafe", cuisine: "Continental", location: "Beach Road", rating: 4.4 }
+    ],
+    places_pool: [ { name: "Houseboat Cruise", location: "Backwaters", type: "Activity" }, { name: "Light House", location: "Beach", type: "Landmark" } ]
+  },
+  "pondicherry": {
+    famous_places: [
+      { name: "Promenade Beach", location: "Pondicherry", description: "Iconic oceanfront with a statue of Mahatma Gandhi." },
+      { name: "Auroville", location: "International Township", description: "An experimental township dedicated to human unity." },
+      { name: "French Quarter", location: "White Town", description: "Golden-toned colonial buildings and charming boutiques." }
+    ],
+    hotels: [
+      { name: "Palais de Mahe", location: "French Quarter", pricePerNight: 12000, rating: 4.7 },
+      { name: "Shenbaga Hotel", location: "Main Town", pricePerNight: 4500, rating: 4.2 }
+    ],
+    restaurants: [
+      { name: "Cafe Extasi", cuisine: "Italian", location: "Mission St", rating: 4.4 },
+      { name: "Surguru", cuisine: "South Indian", location: "Heritage Town", rating: 4.3 }
+    ],
+    places_pool: [ { name: "Aurobindo Ashram", location: "Pondicherry", type: "Temple" }, { name: "Paradise Beach", location: "Pondicherry", type: "Beach" } ]
+  },
+  "khajuraho": {
+    famous_places: [
+      { name: "Western Group of Temples", location: "Khajuraho", description: "The most famous and well-preserved temples of Khajuraho." },
+      { name: "Eastern Group of Temples", location: "Khajuraho", description: "A mix of Hindu and Jain temples with exquisite carvings." },
+      { name: "Raneh Falls", location: "Panna Rd", description: "Stunning canyon waterfalls often called the Grand Canyon of India." }
+    ],
+    hotels: [
+      { name: "The Lalit Temple View", location: "Khajuraho", pricePerNight: 8500, rating: 4.6 },
+      { name: "Radisson Jass", location: "Khajuraho", pricePerNight: 5500, rating: 4.3 }
+    ],
+    restaurants: [
+      { name: "Raja’s Cafe", cuisine: "International", location: "Temple Area", rating: 4.2 },
+      { name: "Zaffron", cuisine: "North Indian", location: "Hotel Radisson", rating: 4.4 }
+    ],
+    places_pool: [ { name: "Light and Sound Show", location: "Main Temple", type: "Activity" } ]
+  },
+  "bhopal": {
+    famous_places: [
+      { name: "Upper Lake", location: "Bhopal", description: "Largest artificial lake in Asia, known for its boating." },
+      { name: "Van Vihar National Park", location: "Bhopal", description: "An open zoo on a hill overlooking the Upper Lake." },
+      { name: "Taj-ul-Masajid", location: "Bhopal", description: "One of the largest mosques in Asia with an impressive architecture." }
+    ],
+    hotels: [
+      { name: "Jehan Numa Palace", location: "Shamla Hills", pricePerNight: 8500, rating: 4.7 },
+      { name: "Noor-Us-Sabah Palace", location: "VIP Road", pricePerNight: 6500, rating: 4.4 }
+    ],
+    restaurants: [
+      { name: "Under the Mango Tree", cuisine: "Fine Dining", location: "Jehan Numa", rating: 4.6 },
+      { name: "Chatori Gali", cuisine: "Street Food", location: "Old Bhopal", rating: 4.5 }
+    ],
+    places_pool: [ { name: "Sanchi Stupa (Day Trip)", location: "Sanchi", type: "Landmark" }, { name: "Bhimbetka Caves (Day Trip)", location: "Bhimbetka", type: "Landmark" } ]
+  },
+  "jaisalmer": {
+    famous_places: [
+      { name: "Jaisalmer Fort", location: "Golden City", description: "The living fort that rises like a giant sandcastle from the desert." },
+      { name: "Sam Sand Dunes", location: "Desert", description: "Famous for camel safaris and traditional cultural shows at night." },
+      { name: "Patwon Ki Haveli", location: "Old City", description: "A cluster of five unique havelis with intricate stone carving." }
+    ],
+    hotels: [
+      { name: "Suryagarh Jaisalmer", location: "Sam Road", pricePerNight: 18000, rating: 4.8 },
+      { name: "Hotel Jaisalkot", location: "Jaisalmer Outskirts", pricePerNight: 8500, rating: 4.5 }
+    ],
+    restaurants: [
+      { name: "The Trio", cuisine: "Rajasthani", location: "Gopa Chowk", rating: 4.3 },
+      { name: "Desert Boy’s Dhani", cuisine: "Traditional", location: "Jaisalmer", rating: 4.2 }
+    ],
+    places_pool: [ { name: "Gadisar Lake", location: "Jaisalmer", type: "Landmark" }, { name: "Tanot Mata Temple (Trip)", location: "Indo-Pak Border", type: "Landmark" } ]
+  },
+  "ooty": {
+    famous_places: [
+      { name: "Ooty Botanical Garden", location: "Ooty", description: "Established in 1848, home to exotic and indigenous flora." },
+      { name: "Nilgiri Mountain Railway", location: "Ooty Station", description: "The famous toy train that winds through blue mountains." },
+      { name: "Doddabetta Peak", location: "Highest Point", description: "The highest mountain in the Nilgiri Hills with a telescope house." }
+    ],
+    hotels: [
+      { name: "Savoy - IHCL SeleQtions", location: "Ooty", pricePerNight: 12000, rating: 4.7 },
+      { name: "Sterling Ooty Fern Hill", location: "Fern Hill", pricePerNight: 6500, rating: 4.4 }
+    ],
+    restaurants: [
+      { name: "Shinkows", cuisine: "Chinese", location: "Commissioner Rd", rating: 4.4 },
+      { name: "Place to Bee", cuisine: "International/Italian", location: "Ooty", rating: 4.5 }
+    ],
+    places_pool: [ { name: "Pykara Lake", location: "Ooty Outskirts", type: "Landmark" }, { name: "Emerald Lake", location: "Silent Valley", type: "Landmark" } ]
+  },
+  "ooty": {
+    famous_places: [
+      { name: "Ooty Botanical Garden", location: "Ooty", description: "Established in 1848, home to exotic and indigenous flora." },
+      { name: "Nilgiri Mountain Railway", location: "Ooty Station", description: "The famous toy train that winds through blue mountains." },
+      { name: "Doddabetta Peak", location: "Highest Point", description: "The highest mountain in the Nilgiri Hills with a telescope house." }
+    ],
+    hotels: [
+      { name: "Savoy - IHCL SeleQtions", location: "Ooty", pricePerNight: 12000, rating: 4.7 },
+      { name: "Sterling Ooty Fern Hill", location: "Fern Hill", pricePerNight: 6500, rating: 4.4 }
+    ],
+    restaurants: [
+      { name: "Shinkows", cuisine: "Chinese", location: "Commissioner Rd", rating: 4.4 },
+      { name: "Place to Bee", cuisine: "International/Italian", location: "Ooty", rating: 4.5 }
+    ],
+    places_pool: [ { name: "Pykara Lake", location: "Ooty Outskirts", type: "Landmark" }, { name: "Emerald Lake", location: "Silent Valley", type: "Landmark" } ]
+  },
+  "kodaikanal": {
+    famous_places: [
+      { name: "Kodai Lake", location: "Town Center", description: "Star-shaped man-made lake with rowing and cycling facilities." },
+      { name: "Coaker's Walk", location: "St. Mary's Rd", description: "A paved pedestrian path providing panoramic mountain views." },
+      { name: "Pillar Rocks", location: "Observatory Rd", description: "Three vertical granite boulders standing 400ft tall." }
+    ],
+    hotels: [
+      { name: "The Tamara Kodai", location: "La Providence", pricePerNight: 18000, rating: 4.8 },
+      { name: "Sterling Kodai Lake", location: "Lake Rd", pricePerNight: 6500, rating: 4.4 }
+    ],
+    restaurants: [
+      { name: "Muncheez", cuisine: "Bakery/Continental", location: "PT Rd", rating: 4.5 },
+      { name: "Hilltop Point", cuisine: "South Indian", location: "Lake View", rating: 4.2 }
+    ],
+    places_pool: [ { name: "Bryant Park", location: "Kodaikanal", type: "Garden" }, { name: "Silver Cascade Falls", location: "Ghat Rd", type: "Waterfall" } ]
+  },
+  "vizag": {
+    famous_places: [
+      { name: "RK Beach", location: "Vizag City", description: "Popular city beach perfect for evening strolls and visiting the Kursura Submarine Museum." },
+      { name: "Kailasagiri", location: "Hilltop", description: "A picturesque hilltop park with a cable car and massive Shiva-Parvati statues." },
+      { name: "INS Kursura Submarine Museum", location: "RK Beach", description: "A decommissioned submarine turned into a museum on the sands." }
+    ],
+    hotels: [
+      { name: "The Gateway Hotel", location: "Beach Road", pricePerNight: 8500, rating: 4.6 },
+      { name: "Novotel Varun Beach", location: "Beach Road", pricePerNight: 11000, rating: 4.7 }
+    ],
+    restaurants: [
+      { name: "Dharani", cuisine: "Telugu/Thali", location: "Hotel Daspalla", rating: 4.4 },
+      { name: "Flying Spaghetti Monster", cuisine: "Italian", location: "Vizag", rating: 4.5 }
+    ],
+    places_pool: [ { name: "Araku Valley (Day Trip)", location: "Eastern Ghats", type: "Landmark" }, { name: "Borra Caves (Trip)", location: "Ananthagiri Hills", type: "Landmark" } ]
+  },
+  "gokarna": {
+    famous_places: [
+      { name: "Om Beach", location: "Gokarna", description: "Named for its unique Om-shaped coastline, popular for water sports." },
+      { name: "Kudle Beach", location: "Gokarna", description: "A beautiful crescent-shaped beach perfect for long walks and sunsets." },
+      { name: "Mahabaleshwar Temple", location: "Town Center", description: "Highly sacred Shiva temple housing the Atmalinga." }
+    ],
+    hotels: [
+      { name: "SwaSwara", location: "Om Beach", pricePerNight: 15000, rating: 4.8 },
+      { name: "Zostel Gokarna", location: "Kudle Beach Road", pricePerNight: 800, rating: 4.6 }
+    ],
+    restaurants: [
+      { name: "Namaste Cafe", cuisine: "Continental/Local", location: "Om Beach", rating: 4.4 },
+      { name: "Chez Christophe", cuisine: "French/Cafe", location: "Gokarna", rating: 4.5 }
+    ],
+    places_pool: [ { name: "Half Moon Beach", location: "Gokarna", type: "Beach" }, { name: "Paradise Beach", location: "Gokarna", type: "Beach" } ]
+  },
+  "coorg": {
+    famous_places: [
+      { name: "Abbey Falls", location: "Madikeri", description: "A spectacular waterfall cascading through coffee and spice plantations." },
+      { name: "Namdroling Monastery", location: "Bylakuppe", description: "The Golden Temple, a magnificent Tibetan Buddhist center." },
+      { name: "Raja’s Seat", location: "Madikeri", description: "A scenic viewpoint where the kings of Coorg used to watch sunsets." }
+    ],
+    hotels: [
+      { name: "The Tamara Coorg", location: "Yavakapadi", pricePerNight: 22000, rating: 4.9 },
+      { name: "Taj Madikeri Resort", location: "Madikeri", pricePerNight: 25000, rating: 4.9 }
+    ],
+    restaurants: [
+      { name: "Coorg Cuisine", cuisine: "Traditional Kodava", location: "Madikeri", rating: 4.6 },
+      { name: "Taste of Coorg", cuisine: "Local", location: "Madikeri", rating: 4.5 }
+    ],
+    places_pool: [ { name: "Dubare Elephant Camp", location: "Kushalnagar", type: "Wildlife" }, { name: "Talakaveri", location: "Brahmagiri Hills", type: "Temple" } ]
+  },
+  "nashik": {
+    famous_places: [
+      { name: "Sula Vineyards", location: "Nashik", description: "India's premier winery, famous for wine tasting and vineyard tours." },
+      { name: "Panchavati", location: "River Side", description: "Sacred site on the banks of Godavari, linked to the Ramayana." },
+      { name: "Trimbakeshwar Temple", location: "Trimbak", description: "Ancient Jyotirlinga temple at the source of the Godavari river." }
+    ],
+    hotels: [
+      { name: "The Source at Sula", location: "Nashik Outskirts", pricePerNight: 14000, rating: 4.7 },
+      { name: "Radisson Blu Nashik", location: "Nashik City", pricePerNight: 8500, rating: 4.5 }
+    ],
+    restaurants: [
+      { name: "Sadhana Chulivarchi Misal", cuisine: "Misal Pav", location: "Nashik", rating: 4.8 },
+      { name: "Little Italy", cuisine: "Italian", location: "Nashik", rating: 4.4 }
+    ],
+    places_pool: [ { name: "Pandavleni Caves", location: "Buddha Vihara", type: "Landmark" }, { name: "Dudhsagar Falls", location: "Nashik", type: "Waterfall" } ]
+  },
+  "nainital": {
+    famous_places: [
+      { name: "Naini Lake", location: "Nainital", description: "The heart of the town, perfect for boating and evening walks." },
+      { name: "Snow View Point", location: "Hilltop", description: "Provides spectacular views of the Himalayas including Nanda Devi." },
+      { name: "Naina Devi Temple", location: "Lake Side", description: "Sacred Shakti Peetha temple on the banks of the lake." }
+    ],
+    hotels: [
+      { name: "The Manu Maharani", location: "Mallital", pricePerNight: 12000, rating: 4.7 },
+      { name: "Shervani Hilltop", location: "Mall Road", pricePerNight: 8500, rating: 4.4 }
+    ],
+    restaurants: [
+      { name: "Sakley’s Mountain Cafe", cuisine: "Continental/Bakery", location: "Mall Road", rating: 4.6 },
+      { name: "Machan", cuisine: "North Indian", location: "Mallital", rating: 4.3 }
+    ],
+    places_pool: [ { name: "Tiffin Top", location: "Nainital", type: "Landmark" }, { name: "Eco Cave Gardens", location: "Nainital", type: "Activity" } ]
+  },
+  "mussoorie": {
+    famous_places: [
+      { name: "Kempty Falls", location: "Lakhwad Road", description: "Gigantic falls that are a major attraction for fun and frolic." },
+      { name: "Mall Road", location: "Mussoorie", description: "The central hub of activities with shops, cafes, and game parlors." },
+      { name: "Gun Hill", location: "Mussoorie", description: "The second highest peak in Mussoorie, accessible via a ropeway." }
+    ],
+    hotels: [
+      { name: "JW Marriott Walnut Grove", location: "Siya Village", pricePerNight: 28000, rating: 4.8 },
+      { name: "The Savoy - IHCL SeleQtions", location: "Library Chowk", pricePerNight: 15000, rating: 4.7 }
+    ],
+    restaurants: [
+      { name: "Char Dukan", cuisine: "Street Food/Snacks", location: "Landour", rating: 4.8 },
+      { name: "The Tavern", cuisine: "Multi-cuisine", location: "Mall Road", rating: 4.4 }
+    ],
+    places_pool: [ { name: "Lal Tibba", location: "Landour", type: "Landmark" }, { name: "Cloud's End", location: "Mussoorie Outskirts", type: "Landmark" } ]
+  },
+  "kaziranga": {
+    famous_places: [
+      { name: "Kaziranga National Park", location: "Assam", description: "UNESCO site famous for the Great Indian One-Horned Rhinoceros." },
+      { name: "Orchid and Biodiversity Park", location: "Kohora", description: "A vast park showcasing over 500 species of Assam orchids." },
+      { name: "Brahmaputra Bank", location: "North Range", description: "Scenic riverbank perfect for bird watching and sunsets." }
+    ],
+    hotels: [
+      { name: "Borgos", location: "Kohora", pricePerNight: 8500, rating: 4.5 },
+      { name: "Diphlu River Lodge", location: "Bagori", pricePerNight: 18000, rating: 4.8 }
+    ],
+    restaurants: [
+      { name: "Hornbill Restaurant", cuisine: "Assamese/Indian", location: "Kohora", rating: 4.3 },
+      { name: "Kaziranga Dhaba", cuisine: "Authentic Assamese", location: "NH-37", rating: 4.4 }
+    ],
+    places_pool: [ { name: "Elephant Safari", location: "National Park", type: "Activity" }, { name: "Jeep Safari", location: "National Park", type: "Activity" } ]
+  },
+  "tawang": {
+    famous_places: [
+      { name: "Tawang Monastery", location: "Tawang City", description: "The second largest monastery in the world and a major Buddhist site." },
+      { name: "Sela Pass", location: "Bhalukpong-Tawang Hwy", description: "High-altitude mountain pass with a beautiful frozen lake." },
+      { name: "Madhuri Lake (Sangetsar)", location: "Tawang Outskirts", description: "Scenic lake formed after an earthquake, surrounded by dead trees." }
+    ],
+    hotels: [
+      { name: "Hotel Tawang Holiday", location: "Old Market", pricePerNight: 3500, rating: 4.2 },
+      { name: "Vivanta Tawang (New)", location: "Tawang", pricePerNight: 12000, rating: 4.7 }
+    ],
+    restaurants: [
+      { name: "The Dragon", cuisine: "Tibetan/North Indian", location: "Tawang", rating: 4.2 },
+      { name: "Orange Restaurant", cuisine: "Multi", location: "Tawang", rating: 4.1 }
+    ],
+    places_pool: [ { name: "War Memorial", location: "Tawang", type: "Landmark" }, { name: "Nuranang Falls", location: "Jang", type: "Waterfall" } ]
+  },
+  "rameswaram": {
+    famous_places: [
+      { name: "Ramanathaswamy Temple", location: "Isle of Rameswaram", description: "Famous for its magnificent corridors and 22 holy wells (Teerthams)." },
+      { name: "Dhanushkodi Beach", location: "Ghost Town", description: "The ruins of a town destroyed in 1964, overlooking the Sri Lankan border." },
+      { name: "Pamban Bridge", location: "Entrance to Island", description: "India's first sea bridge, an engineering marvel with a lifting span." }
+    ],
+    hotels: [
+      { name: "Hyatt Place Rameswaram", location: "Madurai Road", pricePerNight: 6500, rating: 4.6 },
+      { name: "Daiwik Hotels", location: "Madurai Road", pricePerNight: 4500, rating: 4.3 }
+    ],
+    restaurants: [
+      { name: "Gujarat Bhavan", cuisine: "Gujarati Thali", location: "Rameswaram", rating: 4.2 },
+      { name: "Aaryas Veg Restaurant", cuisine: "South Indian", location: "Temple Front", rating: 4.4 }
+    ],
+    places_pool: [ { name: "Kothandaramaswamy Temple", location: "Dhanushkodi Rd", type: "Temple" }, { name: "APJ Abdul Kalam Memorial", location: "Pei Karumbu", type: "Landmark" } ]
+  },
+  "agartala": {
+    famous_places: [{ name: "Ujjayanta Palace", location: "Agartala", description: "A magnificent royal palace, once the seat of the Kingdom of Tripura." }],
+    hotels: [{ name: "Hotel Polo Towers", location: "Agartala", pricePerNight: 5500, rating: 4.4 }],
+    restaurants: [{ name: "Kavita’s Restaurant", cuisine: "Bengali", location: "Agartala", rating: 4.2 }],
+    places_pool: [{ name: "Neermahal (Trip)", location: "Melaghar", type: "Landmark" }]
+  },
+  "aizawl": {
+    famous_places: [{ name: "Durtlang Hills", location: "Aizawl", description: "Offering a panoramic view of the entire hill city." }],
+    hotels: [{ name: "Hotel Regency", location: "Zarkawt", pricePerNight: 3500, rating: 4.1 }],
+    restaurants: [{ name: "Zote Bakery", cuisine: "Snacks", location: "Aizawl", rating: 4.3 }],
+    places_pool: [{ name: "Solomon's Temple", location: "Aizawl", type: "Temple" }]
+  },
+  "ajanta-ellora": {
+    famous_places: [
+      { name: "Kailasa Temple (Ellora)", location: "Cave 16", description: "World's largest monolithic structure carved from a single rock." },
+      { name: "Ajanta Cave Paintings", location: "Ajanta", description: "Masterpieces of 2nd-century BC Buddhist religious art." }
+    ],
+    hotels: [
+      { name: "Vivanta Aurangabad", location: "Aurangabad", pricePerNight: 8500, rating: 4.6 },
+      { name: "Lemon Tree Aurangabad", location: "Aurangabad", pricePerNight: 5500, rating: 4.4 }
+    ],
+    restaurants: [
+      { name: "Bhoj Thali", cuisine: "Indian", location: "Aurangabad", rating: 4.5 }
+    ],
+    places_pool: [ { name: "Bibi Ka Maqbara", location: "Aurangabad", type: "Landmark" } ]
+  },
+  "bhubaneswar": {
+    famous_places: [
+      { name: "Lingaraj Temple", location: "Old Town", description: "Ancient temple city hub and a masterpiece of Odissan architecture." },
+      { name: "Udayagiri & Khandagiri Caves", location: "Bhubaneswar", description: "Ancient rock-cut caves with inscriptions and relief carvings." }
+    ],
+    hotels: [{ name: "Mayfair Lagoon", location: "Bhubaneswar", pricePerNight: 9500, rating: 4.7 }],
+    restaurants: [{ name: "Zaza", cuisine: "Multi", location: "Bhubaneswar", rating: 4.3 }],
+    places_pool: [ { name: "Nandankanan Zoo", location: "Bhubaneswar", type: "Wildlife" } ]
+  },
+  "bodh gaya": {
+    famous_places: [{ name: "Mahabodhi Temple", location: "Bodh Gaya", description: "The UNESCO shrine marking where Buddha attained enlightenment." }],
+    hotels: [{ name: "The Royal Residency", location: "Bodh Gaya", pricePerNight: 4500, rating: 4.2 }],
+    restaurants: [{ name: "Tibet Om", cuisine: "Tibetan", location: "Bodh Gaya", rating: 4.4 }],
+    places_pool: [{ name: "Bodhi Tree", location: "Temple", type: "Landmark" }]
+  },
+  "dalhousie": {
+    famous_places: [{ name: "Khajjiar", location: "Dalhousie", description: "Often called Mini Switzerland of India, a lush green meadow." }],
+    hotels: [{ name: "Grand View Hotel", location: "Dalhousie", pricePerNight: 6500, rating: 4.4 }],
+    restaurants: [{ name: "Kwality", cuisine: "North Indian", location: "Gandhi Chowk", rating: 4.3 }],
+    places_pool: [{ name: "Dainkund Peak", location: "Dalhousie", type: "Landmark" }]
+  },
+  "dharamshala": {
+    famous_places: [{ name: "McLeod Ganj", location: "Dharamshala", description: "Spiritual home of the Dalai Lama and vibrant Tibetan culture." }],
+    hotels: [{ name: "Hyatt Regency", location: "Dharamkot", pricePerNight: 14000, rating: 4.7 }],
+    restaurants: [{ name: "Tibet Kitchen", cuisine: "Tibetan", location: "McLeod Ganj", rating: 4.5 }],
+    places_pool: [{ name: "Cricket Stadium", location: "Dharamshala", type: "Landmark" }]
+  },
+  "dwarka": {
+    famous_places: [{ name: "Dwarkadhish Temple", location: "Dwarka", description: "Sacred Chardham site dedicated to Lord Krishna." }],
+    hotels: [{ name: "The Fern Sattva", location: "Dwarka", pricePerNight: 4500, rating: 4.3 }],
+    restaurants: [{ name: "Shreenath Dining", cuisine: "Gujarati", location: "Dwarka", rating: 4.3 }],
+    places_pool: [{ name: "Nageshwar Jyotirlinga", location: "Dwarka Outskirts", type: "Temple" }]
+  },
+  "gulmarg": {
+    famous_places: [{ name: "Gulmarg Gondola", location: "Gulmarg", description: "World's second highest operating cable car." }],
+    hotels: [{ name: "The Khyber", location: "Gulmarg", pricePerNight: 35000, rating: 4.9 }],
+    restaurants: [{ name: "Cloves", cuisine: "Kashmiri", location: "Gulmarg", rating: 4.4 }],
+    places_pool: [{ name: "Apharwat Peak", location: "Gulmarg", type: "Activity" }]
+  },
+  "gwalior": {
+    famous_places: [{ name: "Gwalior Fort", location: "Gwalior", description: "The imposing hilltop fort once called the Gibraltar of India." }],
+    hotels: [{ name: "Usha Kiran Palace", location: "Gwalior", pricePerNight: 8500, rating: 4.6 }],
+    restaurants: [{ name: "Silver Saloon", cuisine: "Indian", location: "Gwalior", rating: 4.5 }],
+    places_pool: [{ name: "Jai Vilas Palace", location: "Gwalior", type: "Landmark" }]
+  },
+  "imphal": {
+    famous_places: [{ name: "Loktak Lake", location: "Moirang", description: "Famous for its floating phumdis and Keibul Lamjao National Park." }],
+    hotels: [{ name: "Classic Grande", location: "Imphal", pricePerNight: 6500, rating: 4.4 }],
+    restaurants: [{ name: "Luxmi Kitchen", cuisine: "Manipuri", location: "Imphal", rating: 4.6 }],
+    places_pool: [{ name: "Kangla Fort", location: "Imphal", type: "Landmark" }]
+  },
+  "kohima": {
+    famous_places: [{ name: "Kisama Heritage Village", location: "Kohima", description: "Village hosting the Hornbill Festival representing 16 Naga tribes." }],
+    hotels: [{ name: "Hotel Vivor", location: "Kohima", pricePerNight: 4500, rating: 4.2 }],
+    restaurants: [{ name: "The Naga Kitchen", cuisine: "Naga", location: "Kohima", rating: 4.5 }],
+    places_pool: [{ name: "War Cemetery", location: "Kohima", type: "Landmark" }]
+  },
+  "mahabalipuram": {
+    famous_places: [{ name: "Shore Temple", location: "Mahabalipuram", description: "UNESCO site and one of the oldest structural stone temples in South India." }],
+    hotels: [{ name: "Radisson Blu Resort", location: "Mahabalipuram", pricePerNight: 12000, rating: 4.6 }],
+    restaurants: [{ name: "Moonrakers", cuisine: "Seafood", location: "Mahabalipuram", rating: 4.3 }],
+    places_pool: [{ name: "Five Rathas", location: "Mahabalipuram", type: "Landmark" }]
+  },
+  "mount abu": {
+    famous_places: [{ name: "Dilwara Temples", location: "Mount Abu", description: "Known for its extraordinary architecture and marble stone carvings." }],
+    hotels: [{ name: "Sterling Mount Abu", location: "Mount Abu", pricePerNight: 5500, rating: 4.2 }],
+    restaurants: [{ name: "Mulberry Tree", cuisine: "Multi", location: "Mount Abu", rating: 4.3 }],
+    places_pool: [{ name: "Nakki Lake", location: "Mount Abu", type: "Landmark" }]
+  },
+  "orchha": {
+    famous_places: [{ name: "Ram Raja Temple", location: "Orchha", description: "Historically grand temple where Lord Rama is worshipped as a king." }],
+    hotels: [{ name: "Orchha Palace", location: "Orchha", pricePerNight: 7500, rating: 4.5 }],
+    restaurants: [{ name: "Open Sky", cuisine: "Indian", location: "Orchha", rating: 4.2 }],
+    places_pool: [{ name: "Jahangir Mahal", location: "Orchha", type: "Landmark" }]
+  },
+  "pushkar": {
+    famous_places: [{ name: "Brahma Temple", location: "Pushkar", description: "The most prominent temple in the world dedicated to Lord Brahma." }],
+    hotels: [{ name: "Ananta Spa", location: "Pushkar", pricePerNight: 8500, rating: 4.5 }],
+    restaurants: [{ name: "Honey & Spice", cuisine: "Cafe", location: "Pushkar", rating: 4.5 }],
+    places_pool: [{ name: "Pushkar Lake", location: "Pushkar", type: "Landmark" }]
+  },
+  "rann of kutch": {
+    famous_places: [{ name: "Great Rann of Kutch", location: "Dhordo", description: "Seasonal salt marsh which reflects the moon like a mirror." }],
+    hotels: [{ name: "Tent City Dhordo", location: "Dhordo", pricePerNight: 12000, rating: 4.8 }],
+    restaurants: [{ name: "Dining Hall", cuisine: "Kutchi", location: "Dhordo", rating: 4.4 }],
+    places_pool: [{ name: "Kalo Dungar", location: "Kutch", type: "Landmark" }]
+  },
+  "somnath": {
+    famous_places: [{ name: "Somnath Temple", location: "Somnath", description: "Site of the first of the twelve Jyotirlinga shrines of Lord Shiva." }],
+    hotels: [{ name: "The Fern Regency", location: "Somnath", pricePerNight: 4500, rating: 4.3 }],
+    restaurants: [{ name: "Sea View", cuisine: "Indian", location: "Somnath", rating: 4.1 }],
+    places_pool: [{ name: "Somnath Beach", location: "Somnath", type: "Beach" }]
+  },
+  "surat": {
+    famous_places: [{ name: "Diamond Market", location: "Surat", description: "The world's largest diamond cutting and polishing center." }],
+    hotels: [{ name: "Courtyard by Marriott", location: "Surat", pricePerNight: 7500, rating: 4.6 }],
+    restaurants: [{ name: "Sasumaa", cuisine: "Gujarati", location: "Surat", rating: 4.7 }],
+    places_pool: [{ name: "Dumas Beach", location: "Surat Outskirts", type: "Beach" }]
+  },
+  "udupi": {
+    famous_places: [{ name: "Krishna Mutt", location: "Udupi", description: "Historic 13th-century Krishna temple and center of Dvaita philosophy." }],
+    hotels: [{ name: "Fortune Inn Valley View", location: "Manipal", pricePerNight: 5500, rating: 4.4 }],
+    restaurants: [{ name: "Mitra Samaj", cuisine: "Tiffins", location: "Udupi", rating: 4.6 }],
+    places_pool: [{ name: "Malpe Beach", location: "Udupi", type: "Beach" }]
+  },
+  "vijayawada": {
+    famous_places: [{ name: "Kanaka Durga Temple", location: "Vijayawada", description: "Ancient hilltop temple on the Indrakeeladri hill." }],
+    hotels: [{ name: "The Gateway Hotel", location: "Vijayawada", pricePerNight: 6500, rating: 4.5 }],
+    restaurants: [{ name: "Babai Hotel", cuisine: "Andhra", location: "Vijayawada", rating: 4.7 }],
+    places_pool: [{ name: "Undavalli Caves", location: "Vijayawada Outskirts", type: "Landmark" }]
+  },
+  "wayanad": {
+    famous_places: [{ name: "Banasura Sagar Dam", location: "Kalpetta", description: "Largest earth dam in India and second largest in Asia." }],
+    hotels: [{ name: "Vythiri Resort", location: "Vythiri", pricePerNight: 15000, rating: 4.8 }],
+    restaurants: [{ name: "1980's Nostalgic", cuisine: "Kerala", location: "Kalpetta", rating: 4.6 }],
+    places_pool: [{ name: "Edakkal Caves", location: "Wayanad", type: "Landmark" }]
+  },
+  "lonavala": {
+    famous_places: [{ name: "Tigers Leap", location: "Lonavala", description: "A cliff-top viewpoint offering mountain views in the Sahyadris." }],
+    hotels: [{ name: "Della Resorts", location: "Kune Village", pricePerNight: 18000, rating: 4.7 }],
+    restaurants: [{ name: "German Bakery", cuisine: "Cafe", location: "Lonavala", rating: 4.5 }],
+    places_pool: [{ name: "Bhaja Caves", location: "Lonavala", type: "Landmark" }]
+  },
+  "haridwar": {
+    famous_places: [{ name: "Har Ki Pauri", location: "Ganges Bank", description: "The holy ghat where the daily evening Ganga Aarti takes place." }],
+    hotels: [{ name: "Pilibhit House", location: "Jwalapur", pricePerNight: 22000, rating: 4.8 }],
+    restaurants: [{ name: "Chotiwala", cuisine: "South Indian/Thali", location: "Haridwar", rating: 4.4 }],
+    places_pool: [{ name: "Mansa Devi Temple", location: "Hilltop", type: "Temple" }, { name: "Chandi Devi Temple", location: "Hilltop", type: "Temple" }]
   }
 };
 
