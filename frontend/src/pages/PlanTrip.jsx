@@ -1,14 +1,52 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import { Plane, Wallet, CalendarDays, Compass, Loader2 } from 'lucide-react';
+import { Plane, Wallet, CalendarDays, Compass, Loader2, Search, MapPin, Check, X } from 'lucide-react';
 import API_URL from '../api';
+import destinationsData from '../data/india_destinations.json';
 
 export default function PlanTrip({ setTripData }) {
   const [formData, setFormData] = useState({ destination: '', budget: '', days: '' });
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
+  const [searchTerm, setSearchTerm] = useState('');
+  const [showDropdown, setShowDropdown] = useState(false);
+  const [filteredDestinations, setFilteredDestinations] = useState([]);
+  const dropdownRef = useRef(null);
   const navigate = useNavigate();
+
+  const destinations = destinationsData.india_destinations;
+
+  useEffect(() => {
+    // Filter destinations based on search term
+    if (searchTerm.trim() === '') {
+      setFilteredDestinations(destinations.slice(0, 10)); // Show popular first
+    } else {
+      const filtered = destinations.filter(dest => 
+        dest.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        dest.state.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        dest.type.toLowerCase().includes(searchTerm.toLowerCase())
+      );
+      setFilteredDestinations(filtered);
+    }
+  }, [searchTerm, destinations]);
+
+  useEffect(() => {
+    // Handle clicking outside to close dropdown
+    function handleClickOutside(event) {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setShowDropdown(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
+  const handleSelectDestination = (dest) => {
+    setFormData({ ...formData, destination: dest.name });
+    setSearchTerm(dest.name);
+    setShowDropdown(false);
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -56,7 +94,7 @@ export default function PlanTrip({ setTripData }) {
 
         <form onSubmit={handleSubmit} className="space-y-8 relative z-10">
           
-          <div className="group">
+          <div className="group relative" ref={dropdownRef}>
             <label className="block text-sm font-medium text-gray-300 mb-2 group-focus-within:text-primary transition-colors">
               Where do you want to go in India?
             </label>
@@ -65,12 +103,58 @@ export default function PlanTrip({ setTripData }) {
               <input
                 type="text"
                 required
-                placeholder="e.g. Varanasi, Jaipur, Delhi..."
+                placeholder="Search destination, state or type..."
                 className="input-field pl-14 py-4 text-lg"
-                value={formData.destination}
-                onChange={(e) => setFormData({...formData, destination: e.target.value})}
+                value={searchTerm}
+                onFocus={() => setShowDropdown(true)}
+                onChange={(e) => {
+                  setSearchTerm(e.target.value);
+                  setFormData({ ...formData, destination: e.target.value });
+                  setShowDropdown(true);
+                }}
               />
+              {searchTerm && (
+                <button 
+                  type="button"
+                  onClick={() => { setSearchTerm(''); setShowDropdown(false); setFormData({...formData, destination: ''})}}
+                  className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-500 hover:text-white"
+                >
+                  <X className="w-5 h-5" />
+                </button>
+              )}
             </div>
+
+            {/* Destination Dropdown */}
+            {showDropdown && (
+              <div className="absolute z-50 w-full mt-2 glass-card border border-white/20 max-h-64 overflow-y-auto animate-fade-in shadow-2xl no-scrollbar">
+                {filteredDestinations.length > 0 ? (
+                  <div className="p-2 space-y-1">
+                    {filteredDestinations.map((dest, idx) => (
+                      <div 
+                        key={idx}
+                        onClick={() => handleSelectDestination(dest)}
+                        className="flex items-start gap-3 p-3 rounded-xl hover:bg-white/10 cursor-pointer transition-colors group/item"
+                      >
+                        <div className="mt-1">
+                          {dest.type === 'temple' ? <Check className="w-4 h-4 text-secondary" /> : <MapPin className="w-4 h-4 text-primary" />}
+                        </div>
+                        <div>
+                          <div className="font-bold text-white group-hover/item:text-primary transition-colors capitalize">{dest.name}</div>
+                          <div className="text-xs text-gray-400">{dest.state} • <span className="text-accent/80 italic">{dest.type}</span></div>
+                          <div className="text-[10px] text-gray-500 mt-1 line-clamp-1">{dest.famous_for}</div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                ) : (
+                  <div className="p-6 text-center text-gray-400">
+                    <Search className="w-8 h-8 mx-auto mb-2 opacity-20" />
+                    <p>No destinations found for "{searchTerm}"</p>
+                    <p className="text-xs mt-1 italic">Try searching for a state or city name</p>
+                  </div>
+                )}
+              </div>
+            )}
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -144,6 +228,13 @@ export default function PlanTrip({ setTripData }) {
           100% {
             transform: translateX(100%);
           }
+        }
+        .no-scrollbar::-webkit-scrollbar {
+          display: none;
+        }
+        .no-scrollbar {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
         }
       `}</style>
     </div>
